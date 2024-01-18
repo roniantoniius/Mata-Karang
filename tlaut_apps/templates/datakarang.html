@@ -1,0 +1,298 @@
+{% extends 'base.html' %} {% load static %} {% load humanize %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Data Terumbu Karang</span></h2>
+            <p data-aos="fade-up">Dibuatnya aplikasi mata karang diharapkan bisa menjadi acuan data yang berharga bagi peneliti dan organisasi lingkungan di seluruh dunia yang membutuhkan informasi data citra karang. Ini dapat menjadi langkah untuk pengelola atau konservator khususnya terumbu karang untuk mengambil langkah secara komprehensif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(/static/img/pexels-francesco-ungaro-3154149.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3157890.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3487160.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3695175.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-john-cahil-rom-3041870.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-tom-fisk-1935360.jpg)"></div>
+      
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3>Menyelamatkan Terumbu Karang: Tantangan Coral Bleaching dan Upaya Konservasi Global</h3>
+              <p>Coral bleaching merupakan tantangan serius bagi ekosistem terumbu karang di seluruh dunia, karena terumbu karang memiliki peran penting dalam mendukung keanekaragaman hayati laut dan memberikan manfaat ekonomi bagi masyarakat setempat. Perubahan iklim dan aktivitas manusia yang merusak lingkungan laut menjadi faktor utama yang memicu coral bleaching. Langkah-langkah konservasi dan mitigasi perubahan iklim diperlukan untuk melindungi terumbu karang dan memastikan keberlanjutan ekosistem laut.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Coral Bleaching</h3>
+              <p>Berikut beberapa gambar yang memperlihatkan keadaan Coral Bleaching</p>
+              <div class="row gy-3">
+
+                <div class="container">
+                  <div class="gambar-garis">
+                    <img src="{% static 'img/coralb1.jpg' %}" alt="Gambar 1">
+                    <img src="{% static 'img/coralb2.jpg' %}" alt="Gambar 2">
+                    <img src="{% static 'img/coralb3.jpg' %}" alt="Gambar 3">
+                  </div>
+                  <div class="gambar-garis">
+                    <img src="{% static 'img/coralb4.jpg' %}" alt="Gambar 4">
+                    <img src="{% static 'img/coralb6.jpg' %}" alt="Gambar 5">
+                    <img src="{% static 'img/coralb5.jpg' %}" alt="Gambar 6">
+                  </div>
+
+                  <button type="submit">Tambah Gambar</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>CORAL BLEACHING</h2>
+          <p>Ekosistem karang berperan sebagai sumber makanan, penyedia habitat, tempat berkembang biak, bertumbuh serta pemijahan bagi organisme laut. Terumbu karang berperan untuk meningkatkan produktivitas perikanan dan melindungi pantai dari risiko erosi, arus dan gelombang yang kuat. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <img src="{% static 'img/coralb7.jpg' %}" class="img-fluid" alt="">
+            <a href="https://youtu.be/mQ2GDTL2BZ8?si=vhqTe5kNvegxKk-i" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-3">
+
+            <div class="icon-box">
+              <p class="description">Kerusakan Terumbu Karang Pada tahun 2010, adanya coral bleacing secara massal akibat panasnya suhu permukaan laut. Pemutihan karang yang terjadi pada tahun 2010 ini merupakan kejadian terbesar dari wilayah barat hingga timur. Dimana 35% karang keras mati di daerah Aceh Utara, 60% karang mati di daerah sekitar sabang, Pulau Weh, dan Wakatobi 65% karang mengalami bleaching.</p>
+            </div>
+
+            <div class="icon-box">
+              <p class="description">Peristiwa pemutihan karang (coral bleaching) ini juga mengakibatkan tangkapan ikan konsumsi oleh nelayan mengalami penurunan, dengan tangkapan kurang dari 50% pasca tahun 2010. Selain keanekaragaman karang yang menurun, terjadinya perubahan substrat dasar., juga mengacam kehidupan ikan-ikan yang berasosiasi dengan karang.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Tingkatan/Skala Kondisi Pemutihan (Bleaching) Pada Terumbu Karang</h2>
+          <p>Bleaching terumbu karang adalah fenomena dimana terumbu karang kehilangan warnanya akibat stres lingkungan, seperti peningkatan suhu air laut.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{% static 'img/coralb1.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bleaching ringan</h4>
+                <span>Bleaching ringan yang dapat dipulihkan</span>
+                <p>Fenomena ini terjadi ketika terumbu karang kehilangan pigmen alga simbion (zooxanthellae) akibat tekanan lingkungan, namun tingkat keparahannya masih relatif rendah sehingga terumbu karang masih memiliki kemungkinan untuk pulih.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{% static 'img/coralb3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bleaching Sedang</h4>
+                <span>Sebagian karang mengalami kematian</span>
+                <p>Bleaching pada skala sedang adalah kondisi di mana sebagian terumbu karang mengalami pemutihan yang disebabkan oleh stres suhu air yang tinggi. Pada tingkat ini, beberapa koloni karang dapat mengalami kematian akibat kerugian alga simbion (zooxanthellae) yang memberikan warna pada karang. Kondisi ini menandakan tekanan lingkungan yang signifikan terhadap ekosistem terumbu karang.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="{% static 'img/coralb5.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Bleaching Berat</h4>
+                <span>Terjadinya kematian massal semua jenis karang</span>
+                <p>Bleaching skala berat adalah fenomena yang mengakibatkan kematian massal semua jenis karang dalam suatu wilayah. Proses ini terjadi ketika suhu air laut yang tinggi menyebabkan karang untuk melepaskan alga simbionnya, yang berujung pada pemutihan dan kemungkinan kematian karang tersebut. Fenomena bleaching skala berat dapat memiliki dampak signifikan terhadap ekosistem terumbu karang dan keberlanjutan hayati laut.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- Services Section - Home Page -->
+    <section id="services" class="services">
+
+      <!--  Section Title -->
+      <div class="section-header">
+        <h2>Penjelasan Mengenai Coral Bleaching</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Simbiosis Karang dan Zooxanthellae</a></h4>
+                <p class="description">Terumbu karang hidup dalam hubungan simbiosis dengan mikroalga yang disebut zooxanthellae. Alga ini memberikan warna karakteristik pada karang dan menyediakan karbon melalui fotosintesis. Sebaliknya, karang memberikan tempat tinggal dan nutrisi bagi alga.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Pemicu Coral Bleaching</a></h4>
+                <p class="description">Peningkatan suhu air laut yang berlebihan merupakan pemicu utama coral bleaching. Ketika suhu air laut naik di atas ambang tertentu, karang dapat mengalami stres termal. Sebagai respons terhadap stres ini, karang melepaskan zooxanthellae atau alga dari jaringan mereka.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Konsekuensi Pemutihan</a></h4>
+                <p class="description">Kehilangan alga menyebabkan karang kehilangan warnanya, yang sebelumnya berasal dari pigmen yang dihasilkan oleh zooxanthellae. Sebagai akibatnya, karang yang mengalami bleaching tampak pucat atau bahkan putih.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Dampak Lingkungan dan Ekosistem</a></h4>
+                <p class="description">Coral bleaching memiliki dampak serius terhadap ekosistem terumbu karang. Keseimbangan ekosistem terganggu, dan kerusakan yang terjadi dapat berdampak negatif pada kehidupan laut yang bergantung pada terumbu karang, termasuk ikan, moluska, dan organisme lainnya.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Faktor-faktor Tambahan</a></h4>
+                <p class="description">Selain suhu air laut yang tinggi, faktor-faktor lain seperti polusi, radiasi ultraviolet, dan perubahan kualitas air juga dapat memicu coral bleaching. Interaksi faktor-faktor ini dapat membuat karang lebih rentan terhadap stres termal.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+              <div>
+                <h4 class="title"><a href="services-details.html" class="stretched-link">Upaya Perlindungan dan Pemulihan</a></h4>
+                <p class="description">Upaya konservasi, seperti pengelolaan sumber daya air dan peningkatan keberlanjutan, diperlukan untuk mengurangi tekanan terhadap terumbu karang. Selain itu, pemulihan terumbu karang melibatkan proyek restorasi dan penanaman kembali karang yang terkena bleaching.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <!-- End Footer -->
+<!-- Footer End -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html> {% endblock content %}

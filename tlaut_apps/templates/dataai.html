@@ -1,0 +1,166 @@
+{% extends 'base.html' %}  {% load static %}  {% load humanize %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Analisis Data <span>Terumbu Karang</span></h2>
+            <p data-aos="fade-up">Dibuatnya aplikasi mata karang diharapkan bisa menjadi acuan data yang berharga bagi peneliti dan organisasi lingkungan di seluruh dunia yang membutuhkan informasi data citra karang. Ini dapat menjadi langkah untuk pengelola atau konservator khususnya terumbu karang untuk mengambil langkah secara komprehensif.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(/static/img/pexels-francesco-ungaro-3154149.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3157890.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3487160.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3695175.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-john-cahil-rom-3041870.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-tom-fisk-1935360.jpg)"></div>
+      
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3>Menyelamatkan Terumbu Karang: Tantangan Coral Bleaching dan Upaya Konservasi Global</h3>
+              <p>Coral bleaching merupakan tantangan serius bagi ekosistem terumbu karang di seluruh dunia, karena terumbu karang memiliki peran penting dalam mendukung keanekaragaman hayati laut dan memberikan manfaat ekonomi bagi masyarakat setempat. Perubahan iklim dan aktivitas manusia yang merusak lingkungan laut menjadi faktor utama yang memicu coral bleaching. Langkah-langkah konservasi dan mitigasi perubahan iklim diperlukan untuk melindungi terumbu karang dan memastikan keberlanjutan ekosistem laut.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Coral Bleaching</h3>
+              <p>Berikut beberapa gambar yang memperlihatkan keadaan Coral Bleaching</p>
+              <div class="row gy-3">
+
+                <div class="container">
+                  <div class="gambar-garis">
+                    <img src="{% static 'img/coralb1.jpg' %}" alt="Gambar 1">
+                    <img src="{% static 'img/coralb2.jpg' %}" alt="Gambar 2">
+                    <img src="{% static 'img/coralb3.jpg' %}" alt="Gambar 3">
+                  </div>
+                  <div class="gambar-garis">
+                    <img src="{% static 'img/coralb4.jpg' %}" alt="Gambar 4">
+                    <img src="{% static 'img/coralb6.jpg' %}" alt="Gambar 5">
+                    <img src="{% static 'img/coralb5.jpg' %}" alt="Gambar 6">
+                  </div>
+
+                  <button type="submit">Tambah Gambar</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+  
+<!-- ======= Features Section ======= -->
+<section class="features">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>ANALISIS CITRA KARANG</h2><br><br>
+        <p>Analisis citra karang merupakan metode ilmiah yang menggunakan teknologi pengolahan gambar dan pemrosesan data untuk memahami dan mengkarakterisasi struktur serta kondisi ekosistem terumbu karang. Melalui teknik ini, peneliti dapat mengidentifikasi kerusakan, pola pertumbuhan, dan kesehatan terumbu karang dengan lebih akurat.</p>
+      </div><br><br>
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5">
+          <img src="{% static 'img/papua.png' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-7 pt-4"><br><br>
+          <h3>Raja Ampat, Papua<br>Desember, 2023</h3>
+          <p class="fst-italic">
+            Berdasarkan peta suhu permukaan laut yang diberikan, tampak bahwa suhu permukaan laut di area yang 
+            ditunjukkan berkisar antara 30.16°C hingga 30.28°C. Peta ini menunjukkan variasi suhu di berbagai 
+            bagian laut, dengan beberapa area lebih hangat dibandingkan yang lain. Namun, perlu diingat bahwa 
+            ini adalah suhu pada kedalaman satu meter dan kondisi mungkin berbeda pada kedalaman yang lebih besar. 
+            Dalam konteks pemutihan karang, variasi suhu ini juga penting untuk dipertimbangkan karena perubahan 
+            suhu dapat mempengaruhi kesehatan dan kelangsungan hidup karang.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-5 order-1 order-md-2"><br><br><br><br><br>
+          <img src="{% static 'img/grafikpapua.png' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-7 pt-5 order-2 order-md-1">
+          <h3>Grafik Rata-Rata Suhu Permukaan Laut di Raja Ampat, Papua 2021-2023</h3><br>
+          <p class="fst-italic">
+            Berdasarkan data dan grafik yang diberikan, suhu permukaan laut di Pulau Raja Ampat, Papua, tampaknya 
+            mengalami fluktuasi sepanjang tahun 2021 hingga 2023. Suhu rata-rata berkisar antara 29.6°C hingga 
+            sedikit lebih dari 30.4°C. Fluktuasi ini mungkin disebabkan oleh berbagai faktor termasuk perubahan 
+            musiman dan kondisi atmosfer.
+          </p>
+          <p>
+            Dalam konteks pemutihan karang, fluktuasi suhu ini bisa menjadi perhatian serius. Karang sangat sensitif 
+            terhadap perubahan suhu; kenaikan suhu meskipun sedikit dapat menyebabkan stres pada karang yang kemudian 
+            memicu pemutihan karang. Pemutihan ini terjadi ketika zooxanthellae, alga simbiotik yang memberi warna pada 
+            karang, dikeluarkan akibat stres oleh karang tersebut. Oleh karena itu, penting untuk memantau dan mengelola 
+            faktor-faktor yang dapat meningkatkan suhu permukaan laut untuk melindungi ekosistem karang di Pulau Raja Ampat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <!-- End Footer -->
+<!-- Footer End -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html> {% endblock content %}

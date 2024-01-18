@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>MATA KARANG</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <script src="{% static 'vendor/sweetalert2.all.min.js' %}"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+
+<header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="/beranda" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="static/img/logo.png" alt=""> -->
+            <div class="logo" img src="{% static 'img/index/mata karang.jpeg' %}" style="width: 200px; height: auto;" rows="1">
+                <img src="{%  static 'img/index/mata karang.jpeg' %}" alt="logo" style="max-width: 500px; height: auto;" rows="3">
+
+
+            </div>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="/beranda" class="active">Beranda</a></li>
+                <li><a href="/submitkarang">Input Data</a></li>
+                <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li><a href="/datakarang">Data Karang</a></li>
+                        <li class="dropdown"><a href="#"><span>Data Analisis Citra Karang</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                            <ul>
+                                <li><a href="/jawa">Pulau Jawa</a></li>
+                                <li><a href="/sumatera">Pulau Sumatera</a></li>
+                                <li><a href="/kalimantan">Pulau Kalimantan</a></li>
+                                <li><a href="/sulawesi">Pulau Sulawesi</a></li>
+                                <li><a href="/papua">Pulau Papua</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/karang_kelola">Analisis Data</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- .navbar -->
+
+    </div>
+</header>
+
+<body>
+    {% block content %} {% endblock %} {% include 'footer.html' %}
+
+
+</html>

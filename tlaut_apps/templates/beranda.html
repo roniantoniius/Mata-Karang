@@ -1,0 +1,439 @@
+{% extends 'base.html' %}  {% load static %}  {% load humanize %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Selamat Datang Di <span>Mata Karang</span></h2>
+            <p data-aos="fade-up">Memberikan Informasi Seputar Data Citra Terumbu Karang di indonesia</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(/static/img/pexels-francesco-ungaro-3154149.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3157890.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3487160.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-francesco-ungaro-3695175.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-john-cahil-rom-3041870.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(/static/img/pexels-tom-fisk-1935360.jpg)"></div>
+      
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3>Menyelamatkan Terumbu Karang: Tantangan Coral Bleaching dan Upaya Konservasi Global</h3>
+              <p>Coral bleaching merupakan tantangan serius bagi ekosistem terumbu karang di seluruh dunia, karena terumbu karang memiliki peran penting dalam mendukung keanekaragaman hayati laut dan memberikan manfaat ekonomi bagi masyarakat setempat. Perubahan iklim dan aktivitas manusia yang merusak lingkungan laut menjadi faktor utama yang memicu coral bleaching. Langkah-langkah konservasi dan mitigasi perubahan iklim diperlukan untuk melindungi terumbu karang dan memastikan keberlanjutan ekosistem laut.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Coral Bleaching</h3>
+              <p>Berikut beberapa gambar yang memperlihatkan keadaan Coral Bleaching</p>
+              <div class="row gy-3">
+
+                <div class="container">
+                  <div class="gambar-garis">
+                    <img src="{% static 'img/coralb1.jpg' %}" alt="Gambar 1">
+                    <img src="{% static 'img/coralb2.jpg' %}" alt="Gambar 2">
+                    <img src="{% static 'img/coralb3.jpg' %}" alt="Gambar 3">
+                  </div>
+                  <div class="gambar-garis">
+                    <img src="{% static 'img/coralb4.jpg' %}" alt="Gambar 4">
+                    <img src="{% static 'img/coralb6.jpg' %}" alt="Gambar 5">
+                    <img src="{% static 'img/coralb5.jpg' %}" alt="Gambar 6">
+                  </div>
+
+                  <button type="submit">Tambah Gambar</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+  <!-- ======= Alt Services Section ======= -->
+  <section id="alt-services" class="alt-services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-around gy-4">
+        <div class="col-lg-6 img-bg" style="background-image: url(/static/img/karang.jpeg);" data-aos="zoom-in" data-aos-delay="100"></div>
+
+        <div class="col-lg-5 d-flex flex-column justify-content-center">
+          <h3>Menelusuri Klasifikasi Unik Terumbu Karang</h3>
+          <p>Klasifikasi terumbu karang melibatkan berbagai jenis organisme yang membentuk ekosistem karang yang kompleks dan unik. Klasifikasi ini berdasarkan pada perbedaan morfologi, anatomi, dan karakteristik biologis tertentu.</p>
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-easel flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Keragaman Spesies:</a></h4>
+              <p>- Terumbu karang terdiri dari ribuan spesies yang berbeda, termasuk jenis-jenis karang batu, karang lembut, dan karang api. <br>
+                - Spesies-spesies ini diklasifikasikan dalam beberapa famili dan genus, seperti Acroporidae, Pocilloporidae, Faviidae, dan lain-lain.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-patch-check flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Struktur Morfologi</a></h4>
+              <p>- Karang batu, yang merupakan jenis terumbu karang yang paling umum, memiliki struktur kalsium karbonat yang keras.<br>
+                - =Karang lembut memiliki struktur yang lebih fleksibel dan tidak memiliki kerangka kalsium karbonat yang keras.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-brightness-high flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Jenis-Jenis Karang:</a></h4>
+              <p>- Stony Corals (Karang Batu): Membentuk kerangka keras yang merupakan landasan terumbu karang.<br>
+                - Soft Corals (Karang Lembut): Tidak membentuk kerangka keras dan memiliki jaringan lembut.<br>
+                - Fire Corals (Karang Api): Bukan anggota karang batu sejati, tetapi mirip dengan tumbuhan karang dan dapat menyebabkan iritasi kulit.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-brightness-high flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Hubungan Simbiosis</a></h4>
+              <p>- Terumbu karang hidup dalam hubungan simbiosis dengan alga simbiotik (zooxanthellae) yang memberikan warna dan sumber energi melalui fotosintesis.<br>
+                - Beberapa spesies karang juga membentuk hubungan simbiosis dengan hewan lain, seperti ikan karang dan kepiting.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-brightness-high flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Zonasi Vertikal</a></h4>
+              <p>Terumbu karang terbagi ke dalam zona-zona vertikal, seperti zona permukaan, zona batas air pasang surut, dan zona terumbu dalam, dengan organisme yang beradaptasi dengan kondisi khusus di setiap zona.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-brightness-high flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Karakteristik Geografis</a></h4>
+              <p>Terumbu karang dapat ditemukan di perairan hangat dan dangkal di seluruh dunia, tetapi sebagian besar terdapat di sekitar sabuk khatulistiwa.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Alt Services Section -->
+
+  <!-- ======= Stats Counter Section ======= -->
+  <section id="stats-counter" class="stats-counter section-bg">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="600" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Spesies Terumbu Karang<br>by: LIPI-2022</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Genus Terumbu Karang<br>by: LIPI-2022</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Genera Terumbu Karang<br>by: LIPI-2022</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Famili Terumbu Karang<br>by: LIPI-2022</p>
+            </div>
+          </div>
+        </div><!-- End Stats Item -->
+
+<!-- ======= Constructions Section ======= -->
+<section id="constructions" class="constructions">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h3>Metode Pengambilan Data dan Fotografi dalam Memahami Kesehatan dan Keanekaragaman</h3>
+      <p>Fotografi terumbu karang membutuhkan beberapa pertimbangan khusus untuk menghasilkan gambar yang baik dan benar sambil meminimalkan dampak negatif pada lingkungan. </p>
+    </div>
+
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row  g-2 d-flex">
+
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>mengambil Data</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Mengirim Data</h4>
+            </a><!-- End tab nav item -->
+
+          <!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <h3>Metode umum yang digunakan untuk mengambil foto terumbu karang</h3>
+                <p class="fst-italic">
+                  Dalam mengumpulkan data terumbu karang memerlukan pengetahuan yang mendalam tentang ekologi terumbu karang, keahlian selam, dan peralatan yang sesuai. 
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Pilih Peralatan yang Sesuai seperti Gunakan kamera bawah air atau action camera yang tahan air dan 
+                    Pastikan peralatan Anda memiliki fitur white balance yang dapat diatur untuk mengatasi perubahan warna di dalam air.</li>
+                  <li><i class="bi bi-check2-all"></i> Pelajari Teknik Dasar Fotografi Bawah Air seperti pengaturan kecepatan shutter, bukaan, dan pencahayaan.</li>
+                  <li><i class="bi bi-check2-all"></i> Gunakan Filter Warna (red atau magenta) untuk mengatasi kehilangan warna merah di dalam air laut yang dapat meredupkan gambar.</li>
+                  <li><i class="bi bi-check2-all"></i> Jaga Jarak dan Hindari Sentuhan saat mengambil foto.</li>
+                  <li><i class="bi bi-check2-all"></i> Perhatikan Kedalaman dan Kondisi Sinar Matahari</li>
+                  <li><i class="bi bi-check2-all"></i> Perhatikan komposisi foto dengan memanfaatkan pemandangan terumbu karang dan keanekaragaman hayati yang ada.</li>
+                  <li><i class="bi bi-check2-all"></i> Gunakan mode macro untuk menangkap detail kecil terumbu karang dan makrofauna yang hidup di sana.</li>
+                  <li><i class="bi bi-check2-all"></i> Baca Pedoman dan Peraturan Lokal:</li>
+                  <li><i class="bi bi-check2-all"></i> Jadilah Penyelam yang Bertanggung Jawab</li>
+                </ul>
+              </div>
+            
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'img/diving.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Tata cara mengirimkan foto terumbu karang</h3>
+                <p class="fst-italic">
+                  Fotografi terumbu karang membutuhkan beberapa pertimbangan khusus untuk menghasilkan gambar yang baik dan benar.
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>Catat informasi latar belakang tentang lokasi pengambilan foto, kedalaman, dan tanggal pengambilan gambar.</li>
+                  <li><i class="bi bi-check2-all"></i> Pertimbangkan Kebijakan Privasi dan Keamanan:
+                    Pastikan untuk memahami kebijakan privasi dan keamanan organisasi atau ahli yang akan menganalisis foto. Beberapa informasi mungkin bersifat sensitif.</li>
+                  <li><i class="bi bi-check2-all"></i> Siapkan Foto dengan Kualitas Tinggi</li>
+                  <li><i class="bi bi-check2-all"></i> Ikuti Petunjuk atau Permintaan Tambahan atau menentukan format pengiriman tertentu.</li>
+                  <li><i class="bi bi-check2-all"></i> Bersiap untuk Menyumbangkan Data atau berpartisipasi dalam program pemantauan.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/diving3.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Mengeksplorasi Data Terumbu Karang</h3>
+          <p> "Penelitian mendalam untuk menyelidiki dan menganalisis data terkait kehidupan karang di ekosistem laut."</p>
+          <a class="cta-btn" href="datakarang.html">Klik Disini</a>
+        </div><br><br>
+
+        <div class="text-center">
+          <h3>Memasukkan Informasi Data Terumbu Karang</h3>
+          <p> "Melakukan input informasi terkait data terumbu karang ke dalam sistem dengan cermat dan akurat."</p>
+          <a class="cta-btn" href="submitkarang.html">Klik Disini</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Testimoni</h2>
+          <p>Aplikasi mata karang diharapkan bisa menjadi acuan data yang berharga bagi peneliti dan organisasi lingkungan di seluruh dunia yang membutuhkan informasi data citra karang. Ini dapat menjadi langkah untuk pengelola atau konservator khususnya terumbu karang untuk mengambil langkah secara komprehensif.</p>
+        </div>
+
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Adila Dwi</h3>
+                  <h4>Peneliti</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Website analisis terumbu karang ini membantu saya dengan cepat mengidentifikasi tanda-tanda bleaching pada gambar terumbu karang yang saya ambil. Fitur analisisnya yang canggih memberikan hasil yang akurat, sangat memudahkan penelitian saya.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Roni Antonius</h3>
+                  <h4>Peneliti</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Sangat mengesankan bagaimana website ini dapat secara otomatis menganalisis gambar terumbu karang dan memberikan informasi detil tentang kondisi bleaching. Saya merasa lebih efisien dalam penelitian saya berkat alat ini.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Mikael Paris</h3>
+                  <h4>Peneliti</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    "Sebagai peneliti terumbu karang, website analisis ini memberikan pandangan yang sangat berguna tentang sejauh mana bleaching terjadi dalam gambar-gambar saya. Sistemnya yang user-friendly membuatnya mudah digunakan.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Zaidan Husin</h3>
+                  <h4>Peneliti</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Saya senang menemukan website ini karena membantu saya mengidentifikasi area-area bleaching dalam waktu singkat. Analisis gambar yang akurat memberikan kontribusi besar terhadap pemahaman kami tentang kesehatan terumbu karang.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Kyuhyun</h3>
+                  <h4>Fotografer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Sebagai fotografer bawah air yang tertarik pada kesehatan terumbu karang, saya merasa terbantu dengan adanya website ini. Sistem analisisnya yang otomatis memungkinkan saya untuk melihat apakah gambar-gambar saya menunjukkan tanda-tanda bleaching atau tidak.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <!-- End Footer -->
+<!-- Footer End -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html> {% endblock content %}
